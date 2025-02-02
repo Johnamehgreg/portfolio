@@ -8,7 +8,7 @@ function Footer() {
           &copy; {new Date().getFullYear()} Copyright -{" "}
         </span>
         <span className="link-underline text-white font-bold">
-          Felix Kolo Tsowa
+          John Ameh
         </span>
       </div>
     </div>
