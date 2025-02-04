@@ -52,10 +52,7 @@ function App() {
   }, []);
 
   return (
-    <>
-      {/* {loading ? (
-        <AppLoader />
-      ) : ( */}
+    <> 
       <div className="dark:bg-[#1f1f38] w-full bg-[#ffffff] overflow-hidden">
         <ScrollIndicator />
         <NavBar />
@@ -74,7 +71,6 @@ function App() {
         {modalState && <WelcomeModal isModalOpen={modalState} />}
         <BackToTop />
       </div>
-      {/* )} */}
     </>
   );
 }
