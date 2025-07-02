@@ -1,80 +1,65 @@
-import { BsFillPersonLinesFill } from "react-icons/bs";
-import { FaGithub, FaLinkedin, FaTwitter } from "react-icons/fa";
-import { HiOutlineMail } from "react-icons/hi";
-import resume from "../assets/resume.pdf";
+import { BsFillPersonLinesFill } from 'react-icons/bs'
+import { FaGithub, FaLinkedin, FaTwitter } from 'react-icons/fa'
+import { HiOutlineMail } from 'react-icons/hi'
+import resume from '../assets/resume.pdf'
 
-import { useAppContext } from "../contexts/useAppContext";
+import { useAppContext } from '../contexts/useAppContext'
 
 function useSocialLinks() {
-  const { darkMode } = useAppContext();
+  const { darkMode } = useAppContext()
   const allSocialLinks = [
     {
       id: 1,
       child: (
         <>
-          <p className="max-md:hidden">LinkedIn</p>
-          <FaLinkedin
-            size={30}
-            style={{ color: darkMode ? "#4db5ff" : "#fca61f" }}
-          />
+          <p className='max-md:hidden'>LinkedIn</p>
+          <FaLinkedin size={30} style={{ color: darkMode ? '#4db5ff' : '#fca61f' }} />
         </>
       ),
-      href: "https://www.linkedin.com/in/Johnamehgreg/",
-      style: "rounded-tr-md",
+      href: 'https://www.linkedin.com/in/Johnamehgreg/',
+      style: 'rounded-tr-md',
     },
     {
       id: 2,
       child: (
         <>
-          <p className="max-md:hidden">GitHub</p>
-          <FaGithub
-            size={30}
-            style={{ color: darkMode ? "#4db5ff" : "#fca61f" }}
-          />
+          <p className='max-md:hidden'>GitHub</p>
+          <FaGithub size={30} style={{ color: darkMode ? '#4db5ff' : '#fca61f' }} />
         </>
       ),
-      href: "https://github.com/Johnamehgreg",
+      href: 'https://github.com/Johnamehgreg',
     },
     {
       id: 3,
       child: (
         <>
-          <p className="max-md:hidden">Email</p>
-          <HiOutlineMail
-            size={30}
-            style={{ color: darkMode ? "#4db5ff" : "#fca61f" }}
-          />
+          <p className='max-md:hidden'>Email</p>
+          <HiOutlineMail size={30} style={{ color: darkMode ? '#4db5ff' : '#fca61f' }} />
         </>
       ),
-      href: "mailto:johnamehgreg@gmail.com",
+      href: 'mailto:johnamehgreg@gmail.com',
     },
     {
       id: 4,
       child: (
         <>
-          <p className="max-md:hidden">Twitter</p>
-          <FaTwitter
-            size={30}
-            style={{ color: darkMode ? "#4db5ff" : "#fca61f" }}
-          />
+          <p className='max-md:hidden'>Twitter</p>
+          <FaTwitter size={30} style={{ color: darkMode ? '#4db5ff' : '#fca61f' }} />
         </>
       ),
-      href: "https://twitter.com/johnamehgreg1",
-      style: "rounded-br-md",
+      href: 'https://twitter.com/johnamehgreg1',
+      style: 'rounded-br-md',
     },
     {
       id: 5,
       child: (
         <>
-          <p className="max-md:hidden">Resume</p>
-          <BsFillPersonLinesFill
-            size={30}
-            style={{ color: darkMode ? "#4db5ff" : "#fca61f" }}
-          />
+          <p className='max-md:hidden'>Resume</p>
+          <BsFillPersonLinesFill size={30} style={{ color: darkMode ? '#4db5ff' : '#fca61f' }} />
         </>
       ),
       href: resume,
-      type: "resume",
+      type: 'resume',
       download: true,
     },
     // {
@@ -95,67 +80,52 @@ function useSocialLinks() {
     //   type: "cover_letter",
     //   download: true,
     // },
-  ];
+  ]
 
   const allBottomSocialLinks = [
     {
       id: 1,
       child: (
         <>
-          <FaLinkedin
-            size={30}
-            style={{ color: darkMode ? "#4db5ff" : "#fca61f" }}
-          />
+          <FaLinkedin size={30} style={{ color: darkMode ? '#4db5ff' : '#fca61f' }} />
         </>
       ),
-      href: "https://www.linkedin.com/in/johnamehgreg/",
-      style: "rounded-tr-md",
+      href: 'https://www.linkedin.com/in/johnamehgreg01',
+      style: 'rounded-tr-md',
     },
     {
       id: 2,
       child: (
         <>
-          <FaGithub
-            size={30}
-            style={{ color: darkMode ? "#4db5ff" : "#fca61f" }}
-          />
+          <FaGithub size={30} style={{ color: darkMode ? '#4db5ff' : '#fca61f' }} />
         </>
       ),
-      href: "https://github.com/johnamehgreg",
+      href: 'https://github.com/johnamehgreg',
     },
     {
       id: 3,
       child: (
         <>
-          <HiOutlineMail
-            size={30}
-            style={{ color: darkMode ? "#4db5ff" : "#fca61f" }}
-          />
+          <HiOutlineMail size={30} style={{ color: darkMode ? '#4db5ff' : '#fca61f' }} />
         </>
       ),
-      href: "mailto:johnamehgreg@gmail.com",
+      href: 'mailto:johnamehgreg@gmail.com',
     },
     {
       id: 4,
       child: (
         <>
-          <FaTwitter
-            size={30}
-            style={{ color: darkMode ? "#4db5ff" : "#fca61f" }}
-          />
+          <FaTwitter size={30} style={{ color: darkMode ? '#4db5ff' : '#fca61f' }} />
         </>
       ),
-      href: "https://twitter.com/johnamehgreg1",
-      style: "rounded-br-md",
+      href: 'https://twitter.com/johnamehgreg1',
+      style: 'rounded-br-md',
     },
     {
       id: 5,
       child: (
         <>
-          <BsFillPersonLinesFill
-            size={30}
-            style={{ color: darkMode ? "#4db5ff" : "#fca61f" }}
-          />
+          <BsFillPersonLinesFill size={30} style={{ color: darkMode ? '#4db5ff' : '#fca61f' }} />
         </>
       ),
       href: resume,
@@ -174,8 +144,8 @@ function useSocialLinks() {
     //   href: cover_letter,
     //   download: true,
     // },
-  ];
-  return { allSocialLinks, allBottomSocialLinks };
+  ]
+  return { allSocialLinks, allBottomSocialLinks }
 }
 
-export default useSocialLinks;
+export default useSocialLinks
