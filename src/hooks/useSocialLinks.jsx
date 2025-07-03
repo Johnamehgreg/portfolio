@@ -16,7 +16,7 @@ function useSocialLinks() {
           <FaLinkedin size={30} style={{ color: darkMode ? '#4db5ff' : '#fca61f' }} />
         </>
       ),
-      href: 'https://www.linkedin.com/in/Johnamehgreg/',
+      href: 'www.linkedin.com/in/johnamehgreg01',
       style: 'rounded-tr-md',
     },
     {
